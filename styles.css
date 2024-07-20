@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*font-family: "Barlow Semi Condensed", sans-serif;*/
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-color: hsl(210, 46%, 95%);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.grid-container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 21rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+}
+
+.card {
+    background-color: rgb(186, 209, 209);
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    padding: 1.6rem;
+    position: relative;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 14px;
+}
+
+.profile-pic-container {
+    margin-right: 15px;
+}
+
+.profile-pic-container img {
+    object-fit: cover;
+    width: 2rem;
+    border-radius: 3rem;
+}
+
+.card>* {
+    margin-bottom: 0.7rem;
+}
+
+.white-card {
+    background-color: white;
+    color: black;
+}
+
+.summary {
+    position: relative;
+    z-index: 2;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: white;
+}
+
+.name {
+    font-weight: 600;
+}
+
+.quotecon {
+    position: absolute;
+    top: 0rem;
+    right: 2rem;
+    width: 100px;
+    z-index: 0;
+
+}
+
+.quotecon img {
+    width: 100%;
+    height: auto;
+}
+
+.purple-card {
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+}
+
+
+.interview {
+    font-size: 13px;
+    color: hsl(206, 13%, 89%);
+    font-weight: 500;
+}
+
+.white-card .interview {
+    color: hsl(252, 3%, 68%);
+}
+
+.verified {
+    font-size: 11px;
+    color: hsl(0, 1%, 77%);
+}
+
+.dark-card {
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+}
+
+.black-card {
+    background-color: hsl(219, 29%, 14%);
+}
+
+.black-card .name {
+    color: white;
+}
+
+
+
+.white-card .summary {
+    color: hsl(217, 19%, 35%);
+}
+
+.purp img {
+    border: 2px solid hsl(263, 55%, 52%);
+}
+
+.light-purp img {
+    border: 2px solid hsl(263, 62%, 70%);
+}
+
+@media only screen and (min-width: 70rem) {
+
+    .main {
+        min-height: 100vh;
+    }
+
+    .card {
+        margin-right: 2rem;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+
+
+    .interview {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        font-size: 0.9rem;
+    }
+
+    .summary {
+        font-size: 1.35rem;
+        margin-bottom: 1.4rem;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 72rem;
+        max-height: 25rem;
+    }
+
+    .daniel {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .jonathan {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .jeanette {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    .kira {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .patrick {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+}
